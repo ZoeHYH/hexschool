@@ -270,12 +270,12 @@ a{
     display: flex;
     align-items: center;
 }
-.subscription img{
+.instruction img{
     display: block;
     height: 40px;
     margin-right: 20px;
 }
-.subscription p{
+.instruction p{
     color: #EAF0ED;
     font-size: 24px;
     line-height: 33px;
@@ -284,6 +284,9 @@ a{
 /* form */
 form{
     display: flex;
+}
+form :focus{
+    outline: none;
 }
 .mail{
     background: #EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
@@ -294,6 +297,13 @@ form{
 .submit{
     background-color: #FFE180;
     padding: 20px 24px;
+    border: none;
+}
+.submit:hover{
+    transform: translateX(20%);
+}
+:hover {
+    transition: all 0.5s ease-in-out;
 }
 
 /* left */
@@ -303,7 +313,7 @@ form{
     justify-content: space-between;
 }
 .contact li{
-    color: #3F5D3F;
+    color: #3F5D45;
     font-size: 16px;
     line-height: 24px;
 }
@@ -335,7 +345,7 @@ form{
     margin-top: 10px;
 }
 .right p{
-    color: #3F5D3F;
+    color: #3F5D45;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
