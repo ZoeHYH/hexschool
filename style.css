@@ -63,9 +63,8 @@ body{
     font-family: "SF Pro Text","Helvetica Neue","Helvetica", "Arial","PingFang TC","Microsoft JhengHei", sans-serif;
 }
 .container{
-    max-width: 1024px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 0 42px 60px 42px;
 }
 a{
     text-decoration: none;
@@ -90,21 +89,23 @@ a{
 }
 .nav_menu{
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 .nav_menu ul{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
-    padding: 10px 0 8px 0;
     margin-right: 50px;
 }
 .nav_menu li{
-    margin: 0 30px;
+    margin: 0 10px;
+}
+.nav_menu a{
+    display: block;
+    padding: 10px 20px 8px 20px;
 }
 
 /* banner */
@@ -123,19 +124,24 @@ a{
     width: 30%;
 }
 .category a, .category h3{
-    display: block;
     font-size: 24px;
-    line-height: 16px;
+    line-height: 33px;
     font-weight: 600;
     padding: 16px 0;
     text-align: center;
     width: 100%;
 }
+.container a{
+    display: block;
+}
 .category h3{
     color: #EAF0ED;
     background-color: #3F5D45;
 }
-.category li:nth-of-type(2) a{ 
+.category a:hover{ 
+    background-color: #EAF0ED;
+}
+.category a:focus{ 
     background-color: #EAF0ED;
 }
 
@@ -161,6 +167,10 @@ a{
     line-height: 33px;
     padding: 16px 0;
 }
+.item a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
 
 /* item_img */
 .item_img{
@@ -170,8 +180,6 @@ a{
     position: absolute;
     top: 0;
     left: 20px;
-    text-align: center;
-    align-items: center;
     padding: 10px;
     color: #EAF0ED;
     background-color: #3F5D45;
@@ -197,8 +205,6 @@ a{
 .item_info li{
     border: 1px solid #EAF0ED;
     width: 40%;
-    display: flex;
-    justify-content:center;
     color: #3F5D45;
     font-size: 20px;
     line-height: 33px;
@@ -229,36 +235,39 @@ a{
     line-height: 28px;
     font-weight: 300;
 }
-.item_pages li:first-of-type a{
+.item_pages a:first-of-type{
     padding: 18px;
 } 
-.item_pages li:last-of-type a{
+.item_pages a:last-of-type{
     padding: 18px;
     border-right: 1px solid #EAF0ED;
 }
-.item_pages li:nth-of-type(2) a{
+.item_pages :nth-of-type(2){
     color: #EAF0ED;
     background-color: #3F5D45;
     border: none;
     padding: 16px 26px;
 }
-.item_pages li:nth-of-type(3) a{
+.item_pages :nth-of-type(2) + a{
     border-left: none;
 }
 
-/* subscription */
+/* subscription footer */
 .subscription{
+    background-color: #3F5D45;
+}
+.footer{
+    background-color: #EAF0ED;
+}
+.subscription .container, .footer .container{
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #3F5D45;
-    padding: 30px 10%;
 }
 
 /* instruction */
 .instruction{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .subscription img{
@@ -275,7 +284,6 @@ a{
 /* form */
 form{
     display: flex;
-    justify-content: space-between;
 }
 .mail{
     background: #EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
@@ -288,22 +296,11 @@ form{
     padding: 20px 24px;
 }
 
-/* footer */
-.footer{
-    background-color: #EAF0ED;
-    padding: 30px 10%;
-    display: flex;
-    justify-content: space-between;
-}
+/* left */
 .left{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 .contact li{
     color: #3F5D3F;
@@ -318,20 +315,11 @@ form{
     height: 32px;
     margin-right: 8px;
 }
-.right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 
-/* slogan */
+/* right */
 .slogan{
     display: flex;
     flex-direction: row-reverse;
-    justify-self: start;
-    height: 220px;
-    margin-bottom: 45px;
 }
 .slogan h2{
     display: block;
@@ -346,7 +334,6 @@ form{
 .slogan h2:last-of-type{
     margin-top: 10px;
 }
-
 .right p{
     color: #3F5D3F;
     font-family: 'Times New Roman', Times, serif;
@@ -354,6 +341,9 @@ form{
 }
 
 @media (max-width: 768px){ 
+    .container{
+        max-width: 375px;
+    }
     .logo {
         display: none;
     }
@@ -382,18 +372,12 @@ form{
     .item_pages{
         justify-content: center;
     }
-    .subscription{
+    .subscription .container, .footer .container{
         flex-direction: column; 
         padding: 30px;  
     }
     .instruction{
         margin-bottom: 30px;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px;
     }
     .left, .right{
         width: 315px;
