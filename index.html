@@ -4,147 +4,144 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Resume</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="navbar" data-aos="fade-down">
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true" alt="hamburger menu" class="ham_menu">
-                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="Sweetast*" class="logo">
-                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg" alt="Sweetast*" class="logo_768px">
-                <div class="nav_menu">
-                    <ul>
-                        <li><a href="#">首頁</a></li>
-                        <li><a href="#">甜點</a></li>
-                        <li><a href="#">登入</a></li>
-                    </ul>
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車">    
-                </div>
-            </div>
-            <img data-aos="zoom-out" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true" alt="標題圖" class="banner">
-            <div class="content">
-                <ul class="category">
-                    <li data-aos="fade-right"><h3>甜點類別</h3></li>
-                    <li data-aos="fade-right"><a href="#">所有甜點 (48)</a></li>
-                    <li data-aos="fade-right"><a href="#">本日精選 (10)</a></li>
-                    <li data-aos="fade-right"><a href="#">人氣推薦 (26)</a></li>
-                    <li data-aos="fade-right"><a href="#">新品上市 (12)</a></li>
+        <div class="navbar container" data-aos="fade-down">
+            <span class="material-icons ham_menu">menu</span>
+            <h1><a href="index.html" class="logo">Sweetaste*</a></h1>
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">甜點</a></li>
+                    <li><a href="#">登入</a></li>
                 </ul>
-                <div class="items">
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="#">加入購物車</a>
+                <span class="material-icons">shopping_cart</span>     
+            </div>
+        </div>
+        <div class="container">
+            <img  class="banner" data-aos="zoom-out" src="img/banner.png" alt="想吃甜點－是不需要理由的。">
+        </div>
+        <div class="product container">
+            <ul class="category">
+                <li data-aos="fade-right"><h3>甜點類別</h3></li>
+                <li data-aos="fade-right"><a href="#">所有甜點 (48)</a></li>
+                <li data-aos="fade-right"><a href="#">本日精選 (10)</a></li>
+                <li data-aos="fade-right"><a href="#">人氣推薦 (26)</a></li>
+                <li data-aos="fade-right"><a href="#">新品上市 (12)</a></li>
+            </ul>
+            <div class="items">
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-1.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="#">加入購物車</a>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="#">加入購物車</a>
+                </div>
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-2.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="#">加入購物車</a>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="#">加入購物車</a>
+                </div>
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-3.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="#">加入購物車</a>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="#">加入購物車</a>
+                </div>
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-4.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="">加入購物車</a>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="#">加入購物車</a>
+                </div>
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-5.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
-                    <div data-aos="zoom-out" class="item">
-                        <div class="item_img">
-                            <div class="selected"><p>本日精選</p></div>
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true" alt="favorite" class="favorite">
-                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true" alt="焦糖馬卡龍" class="product_img">
-                        </div>
-                        <ul class="item_info">
-                            <li><h2>焦糖馬卡龍</h2></li>
-                            <li>NT$ 450</li>
-                        </ul>
-                        <a href="#">加入購物車</a>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="">加入購物車</a>
+                </div>
+                <div data-aos="zoom-out" class="item">
+                    <div class="item_img">
+                        <div class="selected"><p>本日精選</p></div>
+                        <span class="material-icons favorite">favorite_border</span>
+                        <img src="img/p-6.png" alt="焦糖馬卡龍" class="product_img">
                     </div>
+                    <ul class="item_info">
+                        <li><h2>焦糖馬卡龍</h2></li>
+                        <li>NT$ 450</li>
+                    </ul>
+                    <a href="#">加入購物車</a>
                 </div>
             </div>
             <div data-aos="fade-left" class="item_pages">
-                <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true" alt="left"></a>
+                <a href="#"><span class="material-icons">arrow_left</span></a>
                 <a href="#" class="item_page">1</a>
                 <a href="#" class="item_page">2</a>
                 <a href="#" class="item_page">3</a>
-                <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true" alt="right"></a>
+                <a href="#"><span class="material-icons">arrow_right</span></a>
             </div>
         </div>
         <div data-aos="fade-up" class="subscription">
             <div class="container">
                 <div class="instruction">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="S*">
+                    <img src="/img/logo-light.svg" alt="S*">
                     <p>訂閱你我的甜蜜郵件</p> 
                 </div>
                 <form action="#">
-                    <input type="text" name="mail" class="mail">
-                    <button onClick="document.formname.submit();" class="submit"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true" alt="submit"></button>
+                    <input type="text" name="mail" id="mail" class="mail">
+                    <button onClick="document.formname.submit();" class="submit"><span class="material-icons">arrow_forward</span></button>
                 </form>
             </div>
         </div>
         <div data-aos="fade-up"  class="footer">
             <div class="container">
-                <div class="left">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg" alt="Sweetast*">
+                <div class="footer_info">
                     <div class="contact">
+                        <img src="img/logotype-lg-dark.svg" alt="Sweetast*">
                         <ul>
                             <li>07-1234-5678</li>
                             <li>sweetaste@email.com</li>
                             <li>800 高雄市新興區幸福路 520 號</li>
                         </ul>
-                        <div class="social_links">
-                            <a><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg" alt="line@"></a>
-                            <a><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg" alt="facebook"></a>
-                        </div>
                     </div>
+                    <img class="slogan" src="img/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子。">
                 </div>
-                <div class="right">
-                    <div class="slogan">
-                        <h2>今天是個———</h2>
-                        <h2>吃甜點的好日子。</h2>
+                <div class="footer_link">
+                    <div>
+                        <a><img src="img/ic-line%40.svg" alt="line@"></a>
+                        <a><img src="img/ic-facebook.svg" alt="facebook"></a>
                     </div>
                     <p>© 2018 Sweetaste* All Rights Reserved</p>
                 </div>

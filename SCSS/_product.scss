@@ -1,0 +1,168 @@
+.banner{
+    margin-bottom: $margin-l;
+    @include pad() {
+        margin-bottom: 0;
+    }
+}
+
+.product {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: $margin-l;
+    @include pad() {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .category {
+        width: 30%;
+        @include pad() {
+            width: 100%;
+            margin-bottom: $margin-m;
+        }
+        h3 {
+            font-size: $font-l;
+            line-height: $line-l;
+            font-weight: $semibold;
+            padding: $padding-btn 0;
+                        text-align: center;
+            width: 100%;
+            color: $primary-light;
+            background-color: $primary;
+        }
+        a {
+            display: block;
+            font-size: $font-l;
+            line-height: $line-l;
+            font-weight: $semibold;
+            padding: $padding-btn 0;
+            border: 1px solid $primary-light;
+            text-align: center;
+            width: 100%;
+            &:hover, &:focus {
+                background-color: $primary-light;
+            }
+        }
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        @include pad() {
+            width: 100%;
+        }
+        .item{
+            width: 45%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            @include pad() {
+                width: 100%;
+                margin-left: 0;
+            }
+            &:nth-last-child(2) {
+                margin-bottom: 0;
+                @include pad(){
+                    margin-bottom: 5%;
+                }
+            }
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            .item_img{
+                position: relative;
+                .product_img{
+                    @include pad() {
+                        width: 100%;
+                    }
+                }
+                .selected{
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                    padding: 10px;
+                    color: #EAF0ED;
+                    background-color: #3F5D45;
+                    p{
+                        font-size: $font-s;
+                        line-height: $line-s;
+                        font-weight: $semibold;
+                        writing-mode: vertical-rl;
+                        letter-spacing: 3px;
+                        margin: 8px 0;
+                    }
+                }
+                .favorite{
+                    position: absolute;
+                    top: $margin-m;
+                    right: $margin-m;
+                }
+            }
+            a{
+                background-color: $primary-light;
+                font-weight: bold;
+                font-size: $font-l;
+                line-height: $line-l;
+                padding: $padding-btn 0;
+                &:hover{
+                    background-color: $primary;
+                    color: $primary-light;
+                }
+            }
+            .item_info{
+                display: flex;
+                li{
+                    border: 1px solid $primary-light;
+                    width: 40%;
+                    color: $primary;
+                    font-size: $font-m;
+                    line-height: $line-m;
+                    font-weight: $semibold;
+                    padding: 14px 0;
+                    vertical-align: middle;
+                    &:first-of-type{
+                        width: 60%;
+                        font-weight: $light;
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+    .item_pages {
+        display: flex;
+        margin-top: $margin-m;
+        a{
+            display: flex;
+            width: 60px;
+            height: 60px;
+            border: 1px solid $primary-light;
+            border-right: none;
+            padding: 16px 24px;
+            font-size: $font-m;
+            line-height: $line-m;
+            font-weight: $light;
+            &:first-of-type{
+                padding: 18px;
+            }
+            &:last-of-type{
+                padding: 18px;
+                border-right: 1px solid #EAF0ED;
+            }
+            &:nth-of-type(2){
+                color: #EAF0ED;
+                background-color: #3F5D45;
+                border: none;
+                padding: 16px 26px;
+            }
+            &:nth-of-type(2) + a{
+                border-left: none;
+            }
+        }
+    }
+
+}

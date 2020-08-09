@@ -48,19 +48,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* main */
-
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 *,*:before,*:after{
     box-sizing: border-box;
 }
-body{
-    font-family: "SF Pro Text","Helvetica Neue","Helvetica", "Arial","PingFang TC","Microsoft JhengHei", sans-serif;
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5; 
 }
 .container{
     max-width: 940px;
@@ -78,34 +79,27 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    height: 40px;
+}
 .ham_menu{
     display: none;
-}
-.logo{
-    height: 40px;
 }
 .logo_768px{
     display: none;
 }
 .nav_menu{
+    width: 40%;
     display: flex;
-
     align-items: center;
+    justify-content: space-between;
 }
 .nav_menu ul{
     display: flex;
-    align-items: center;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 600;
-    margin-right: 50px;
-}
-.nav_menu li{
-    margin: 0 10px;
 }
 .nav_menu a{
-    display: block;
-    padding: 10px 20px 8px 20px;
+    padding: 30px;
+    font-weight: 600;
 }
 
 /* banner */
@@ -131,7 +125,7 @@ a{
     text-align: center;
     width: 100%;
 }
-.container a{
+.category a{
     display: block;
 }
 .category h3{
@@ -242,24 +236,23 @@ a{
     padding: 18px;
     border-right: 1px solid #EAF0ED;
 }
-.item_pages :nth-of-type(2){
+.item_pages a:nth-of-type(2){
     color: #EAF0ED;
     background-color: #3F5D45;
     border: none;
     padding: 16px 26px;
 }
-.item_pages :nth-of-type(2) + a{
+.item_pages a:nth-of-type(2) + a{
     border-left: none;
 }
 
-/* subscription footer */
+/* subscription */
 .subscription{
     background-color: #3F5D45;
 }
-.footer{
-    background-color: #EAF0ED;
-}
-.subscription .container, .footer .container{
+
+.subscription .container{
+    max-width: 880px;
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
@@ -288,7 +281,7 @@ form{
 form :focus{
     outline: none;
 }
-.mail{
+[name="mail"]{
     background: #EAF0ED url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px 20px;
     padding: 16px 16px 16px 64px;
     line-height: 24px;
@@ -306,27 +299,30 @@ form :focus{
     transition: all 0.5s ease-in-out;
 }
 
-/* left */
-.left{
+/* footer */
+.footer{
+    background-color: #EAF0ED;
+}
+.footer .container {
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.contact li{
+.contact ul li{
     color: #3F5D45;
     font-size: 16px;
     line-height: 24px;
 }
-.social_links{
-    display: flex;
-    margin-top: 30px;
-}
-.social_links img{
-    height: 32px;
-    margin-right: 8px;
-}
-
-/* right */
 .slogan{
     display: flex;
     flex-direction: row-reverse;
@@ -344,11 +340,25 @@ form :focus{
 .slogan h2:last-of-type{
     margin-top: 10px;
 }
-.right p{
+.footer_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.footer_link a{
+    display: inline-block;
+}
+.footer_link img{
+    height: 32px;
+    margin-right: 8px;
+}
+.footer_link p{
     color: #3F5D45;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
+
 
 @media (max-width: 768px){ 
     .container{
@@ -360,6 +370,9 @@ form :focus{
     .logo_768px{
         display: block;
         height: 24px;
+    }
+    .nav_menu {
+        width: auto;
     }
     .nav_menu ul{
         display: none;
@@ -384,25 +397,29 @@ form :focus{
     }
     .subscription .container, .footer .container{
         flex-direction: column; 
-        padding: 30px;  
+        padding: 30px;
+        max-width: 375px;
     }
     .instruction{
         margin-bottom: 30px;
     }
-    .left, .right{
-        width: 315px;
+    .contact{
         align-items: start;
     }
-    .left img{
+    .contact img{
         height: 26px;
     }
-    .left ul{
+    .contact ul{
         margin-top: 40px;
     }
     .slogan{
         display: none;
     }
-    .right p{
-        margin-top: 25px;
+    .footer_link{
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer_link p{
+        margin-top: 30px;
     }
 }
