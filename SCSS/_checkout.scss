@@ -3,18 +3,32 @@
     margin: 0 auto;
     display: flex;
     margin-bottom: $margin-l;
+    @include pad() {
+        margin-bottom: 0;
+        justify-content: center;
+    }
     .receipt {
         max-width: 460px;
         margin-right: $margin-s;
         font-weight: $semibold;
         display: flex;
         flex-direction: column;
+        background: $primary;
+        @include pad() {
+            max-width: 768px;
+            width: 100%;
+            margin-right: 0;
+        }
         .wrapper {
             padding: $margin-m 40px;
-            background: $primary;
             color: $primary-light;
             display: flex;
             flex-direction: column;
+            @include pad() {
+                padding: $margin-m;
+                max-width: 375px;
+                margin: 0 auto;
+            }
             .title {
                 margin-bottom: $margin-m;
                 display: flex;
@@ -86,6 +100,7 @@
             font-family: inherit;
             padding: $padding-btn 0;
             border: none;
+            width: 100%;
         }
     }
     .order {
@@ -93,6 +108,9 @@
         color: $primary-middle;
         display: flex;
         flex-direction: column;
+        @include pad() {
+            display: none;
+        }
         div {
             & ~ div {
                 margin-top: $margin-s;
